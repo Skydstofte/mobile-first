@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Forside</title>
+  </head>
+  <body>
+    
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/images/Logo.png" alt="Logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><img src="img/images/menuitem.png" alt=""><span class="nav-icon"></span></label>
+        <ul class="menu-items">
+            <li><a href="bordbestilling.html">Bordbestilling</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="shoppen.html">Shoppen</a></li>
+            <li><a href="omos.html">Om os</a></li>
+        </ul>
+    </header>
+
+    <div class="bg-img">
+        <div class="bg-img-rose">
+            <img src="img/images/rose.png" alt="Rose">
+        </div>
+        <div class="bg-img-viola">
+            <img src="img/images/viola.png" alt="Stedsmorderblomst">
+        </div>
+        <div class="bg-img-longflower">
+            <img src="img/images/longflower.png" alt="Blå blomst">
+        </div>
+    </div>
+
+    <main>
+        
+        <section>
+            <h1>Velkommen</h1>
+            <img class="logo-img" src="img/images/Logo.png" alt="Logo">
+            <img src="img/images/ebbe.jpg" alt="Ebbe Ottzen" />
+            <h3>Aarhus' hyggelisgste café</h3>
+            <p>
+            Ebbe Ottzen og konen stiftede i 2007 caféen "Hos Sofies Forældre".
+            </p>
+        </section>
+
+        <div class="first-row">
+            <div class="column">
+                <p>
+                    Vi er et sted med hygge og nærvær. Der er plads til alle, <br>også til mormor
+                    og farmor. <br>Men også familie med små babyer eller børn. <br> Vi har masser af
+                    kaffe, the og kage og der er også mulighed for mad, hvis det skulle
+                    være.
+                </p>
+            </div>
+
+        
+            <div class="slider-cafe-container">
+                <div class="slider-cafe">
+                    <img class="slider-cafe-img" src="img/slider-cafe/indgang.jpg" alt="Indgang">
+                    <img class="slider-cafe-img" src="img/slider-cafe/2indgang.jpg" alt="Anden indgang">
+                    <img class="slider-cafe-img" src="img/slider-cafe/kælder.jpg" alt="Kælder">
+                    <img class="slider-cafe-img" src="img/slider-cafe/striktøj.jpg" alt="Strikketøj">
+                    <img class="slider-cafe-img" src="img/slider-cafe/thesæt.jpg" alt="Thesæt">
+                    
+                    <div class="button">
+                        <button class="button-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                        <button class="button-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="second-row">
+            <div class="columnbord">
+                <a href="bordbestilling.html">Bordbestilling</a>
+                <img src="img/images/bordpladser-dato.png" alt="Antal ledige pladser">
+            </div>
+
+            <div class="slider">
+                <img class="slider-shop-img" src="img/slider-shop/the/sweet.jpg" alt="The">
+                <img class="slider-shop-img" src="img/slider-shop/figures/sisters.jpg" alt="Sisters figur">
+                <img class="slider-shop-img" src="img/slider-shop/snacks/81387.jpg" alt="Pasteller">
+                <img class="slider-shop-img" src="img/slider-shop/figures/26241.jpg" alt="Skilt">
+            
+                <div class="button">
+                    <button class="button-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                    <button class="button-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    <!-- Java Script for sliders -->
+    <script>
+        var slideIndex = [1,1];
+        var slideId = ["slider-cafe-img", "slider-shop-img"]
+        showDivs(1, 0);
+        showDivs(1, 1);
+        
+        function plusDivs(n, no) {
+        showDivs(slideIndex[no] += n, no);
+        }
+        
+        function showDivs(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
+      
+    </main>
+
+    <footer>
+        <h2>Hos Sofies Forældre</h2>
+        <address>
+            Frederiksgade 74, st. th. <br> 
+            8000 Aarhus C <br>
+            Telefon: <a href="tel:+60800799">+45 60 80 07 99</a> <br>
+            <a href="sofies@post.cybercity.dk">Send e-mail</a>
+        </address>
+        <section>
+            <h2>Virksomheds info</h2>
+            <a href="omos">Om os</a> <br>
+            <a href="omos">Kontakt os</a> <br>
+            <a href="omos">Vilkår</a> <br>
+            <a href="omos">Jobs</a> 
+            
+        </section>
+    </footer>
+  </body>
+</html>
