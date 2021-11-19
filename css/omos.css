@@ -1,0 +1,400 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: Newsreader, sans-serif;
+}
+
+/* You start your css below */
+
+a:link {color: black;}
+a:visited {color: black;}
+a:hover {color: black;}
+a:active {color: black;}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 100%;
+}
+
+/* -------- Theme style ----------- */
+
+.theme_page {
+  color: #000000;
+  background-color: #e0c9a6;
+}
+
+.theme_element_backgroundcolor {
+  background-color: #f7d8aa;
+}
+
+/* ############ Menubar ############ */
+
+.header {
+  background: #e0c8a7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  top: 0;
+}
+
+.header a img {
+  position: absolute;
+  display: block;
+  height: 55px;
+  margin-left: 10%;
+  padding: 5px 0 0 0;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header ul a:hover {
+  background-color: #e7d3b4;
+  border-radius: 10px;   
+}
+
+.header .menu-items {
+  clear: both;
+  max-height: 0;
+  transition: .4s ease-out;
+}
+
+.header .menu-icon {
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon img {
+  height: 70%;
+  margin: 10px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu-items {
+  max-height: 240px;
+  background: #fff8ef;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+.header .menu-btn:checked ~ .menu-items li {
+  text-align: center;
+}
+
+/* ####### background flowers ######## */
+
+.bg-img {
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.bg-img-rose img {
+  display: flex;
+  width: 40%;
+  z-index: -1;
+  opacity: 0.5;
+  transform: rotate(40deg) translateX(10%) translateY(50%)
+
+}
+
+.bg-img-viola img {
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+  z-index: -1;
+  opacity: 0.7;
+  transform: rotate(-40deg) translateX(70%) translateY(-20%);
+}
+
+.bg-img-longflower img {
+  display: flex;
+  width: 30%;
+  z-index: -1;
+  opacity: 0.5;
+  transform: rotate(40deg) translateX(-170%) translateY(-50%);
+}
+
+.nav {
+  margin: 100px 0 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page_navigation {
+  display: flex;
+}
+
+.navigation_element {
+  text-decoration: none;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.navigation_element:hover {
+  opacity: 0.5;
+}
+
+.nav-container img {
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgba(156, 130, 94, 0.8);
+  border-radius: 10px;
+}
+
+.nav-container h3 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.nav-container p {
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+/* ------- Om os section ----------- */
+.omos_section {
+  margin: 20px auto;
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.omos_heading {
+  margin-bottom: 5px;
+}
+
+.omos_section img{
+  max-width: 50%;
+  margin: 20px auto;
+  border: solid rgba(156, 130, 94, 0.8);
+  border-radius: 10px;
+}
+
+/* -------- Contact and cards ------------ */
+
+.kontakt_section {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.kontakt_section h2 {
+  margin-bottom: 20px;
+}
+
+.kontakt_flexbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.kontakt_heading {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+  width: 210px;
+  height: 275px;
+  margin: 0 auto 30px;
+  background-color: wheat;
+}
+
+.card_heading {
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+}
+
+.card_content {
+  text-align: center;
+  padding: 15px;
+  color: #000000;
+}
+
+.card_top {
+  height: 44px;
+  background-color: #593d18;
+}
+
+.maps {
+  width: 208px;
+  height: 227px;
+}
+
+/* ########## Footer ########### */
+
+footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: rgba(224, 200, 167, 0.8);
+  position: absolute;
+  box-shadow: -5px -10px 8px 0 rgba(0,0,0,.2);
+}
+
+footer h2 {
+  margin: 20px 0 15px;
+  text-align: center;
+}
+
+footer address {
+  max-width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+footer address a {
+  text-decoration: none;
+}
+
+footer section {
+  max-width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer section h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+footer section a {
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* ####### @Media code ######## */
+
+@media (min-width:600px) {
+
+  /* Header */
+  header a img {
+      position: absolute;
+      display: block;
+      height: 60px;
+  }
+
+  header li {
+      float: left;
+  }
+
+  .header li a {
+      padding: 15px 10px;
+      height: 50px;
+      margin-top: 5px;
+  }
+
+  .header .menu-items {
+      clear: none;
+      float: right;
+      max-height: none;
+  }
+
+  .header .menu-btn:checked ~ .menu-items {
+      background: transparent;
+      box-shadow: none;
+  }
+
+  .bg-img-rose img {
+      width: 300px;
+  }
+
+  .bg-img-viola img {
+      width: 300px;
+  }
+
+  .bg-img-longflower img {
+      width: 200px;
+      margin-right: 80%;
+      transform: rotate(25deg) translateY(-100%);
+  }
+
+  .card {
+    width: 280px;
+    height: 275px;
+  }
+
+  .maps {
+    width: 278px;
+    height: 227px;
+  }
+
+  /* Footer */
+  footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  footer > h2 {order: 2;}
+  footer > address {text-align: left; order:1;}
+  footer > section {text-align: left; order:3;}
+
+}
+
+
+@media only screen and (min-width: 800px) {
+  
+  .kontakt_flexbox {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}

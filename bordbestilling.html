@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
+        <link rel="stylesheet" href="css/bordbestilling.css">
+        <title>Bordbestilling</title>
+    </head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/images/Logo.png" alt="Logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><img src="img/images/menuitem.png" alt=""><span class="nav-icon"></span></label>
+        <ul class="menu-items">
+            <li><a href="bordbestilling.html">Bordbestilling</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="shoppen.html">Shoppen</a></li>
+            <li><a href="omos.html">Om os</a></li>
+        </ul>
+    </header>
+
+    <div class="bg-img">
+        <div class="bg-img-rose">
+            <img src="img/images/rose.png" alt="Rose">
+        </div>
+        <div class="bg-img-viola">
+            <img src="img/images/viola.png" alt="Stedsmorderblomst">
+        </div>
+        <div class="bg-img-longflower">
+            <img src="img/images/longflower.png" alt="Blå blomst">
+        </div>
+    </div>
+
+    <main>
+        <section class="overskrift">
+            <h1>Bordbestilling</h1>
+            <h2>Det er muligt at bestille bord hos os, vi har en del 2 og 3 personers borde, og nogle 4-6 personers borde</h2>
+        </section>
+        <div class="form">
+            <input id="navn" type="text" placeholder="Navn og tlf">
+            <br>
+            <input id="email" type="text" placeholder="Email (påkrævet)">
+            <br>
+            <input id="dato" type="date">
+            <br> 
+            <input id="tid" type="time">
+            <br>
+            <input id="antal" type="number" placeholder="Antal gæster" min="1" max="50">
+            <div id="maks">Højst 6 per bord!</div>
+            <br>
+            <br>
+            <input id="submit" type="submit"  value="Indsend">
+        </div>
+        <div class="wrapper">
+            <h2>Antal pladser</h2>
+            <span class="box second-number"></span>
+            <span class="box first-number"></span>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Hos Sofies Forældre</h2>
+        <address>
+            Frederiksgade 74, st. th. <br> 
+            8000 Aarhus C <br>
+            Telefon: <a href="tel:+60800799">+45 60 80 07 99</a> <br>
+            <a href="sofies@post.cybercity.dk">Send e-mail</a>
+        </address>
+        <section>
+            <h2>Virksomheds info</h2>
+            <a href="omos">Om os</a> <br>
+            <a href="omos">Kontakt os</a> <br>
+            <a href="omos">Vilkår</a> <br>
+            <a href="omos">Jobs</a> 
+        </section>
+    </footer>
+    
+</body>
+</html>

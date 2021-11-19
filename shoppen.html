@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shoppen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Shoppen</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/images/Logo.png" alt="Logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><img src="img/images/menuitem.png" alt=""><span class="nav-icon"></span></label>
+        <ul class="menu-items">
+            <li><a href="bordbestilling.html">Bordbestilling</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="shoppen.html">Shoppen</a></li>
+            <li><a href="omos.html">Om os</a></li>
+        </ul>
+    </header>
+
+    <div class="bg-img">
+        <div class="bg-img-rose">
+            <img src="img/images/rose.png" alt="Rose">
+        </div>
+        <div class="bg-img-viola">
+            <img src="img/images/viola.png" alt="Stedsmorderblomst">
+        </div>
+        <div class="bg-img-longflower">
+            <img src="img/images/longflower.png" alt="Blå blomst">
+        </div>
+    </div>
+
+    <main>
+
+        <h1>Shoppen</h1>
+
+        <h2>Snacks</h2>
+        <div class="1-carousel">
+            <div class="cell"><img src="img/slider-shop/snacks/81186.jpg" alt="Pasteller"></div>
+            <div class="cell"><img src="img/slider-shop/snacks/81281.jpg" alt="Pasteller"></div>
+            <div class="cell"><img src="img/slider-shop/snacks/81387.jpg" alt="Pasteller"></div>
+            <div class="cell"><img src="img/slider-shop/snacks/81822.jpg" alt="Pasteller"></div>
+            <div class="cell"><img src="img/slider-shop/snacks/Plade-Ruby_lyseroed-chokolade.jpg" alt="Chokolade"></div>
+        </div>
+
+        <h2>The</h2>
+        <div class="2-carousel">
+            <div class="cell"><img src="img/slider-shop/the/Dragon-mint.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/green-apple.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/happines.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/orarge.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/spring.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/sweet.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/tiger-mint-scaled.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/the/yoga.jpg" alt=""></div>
+        </div>
+
+        <h2>Nipsting</h2>
+        <div class="3-carousel">
+            <div class="cell"><img src="img/slider-shop/figures/23234.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/26241.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/born-paa-havemur.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/mand-bededrak-ansigt.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/sisters.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/Willow-Tree-Mother-and-Son.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/Willow-Tree-My-Girls.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/figures/willow-Tree-Wisdom.jpg" alt=""></div>
+        </div>
+
+        <h2>Marmelade</h2>
+        <div class="4-carousel">
+            <div class="cell"><img src="img/slider-shop/marmelade/crystal_orange.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/marmelade/orange_with_malt_whisky_marmalade.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/marmelade/strawberry_conserve.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/marmelade/tawny_orange_2nd.jpg" alt=""></div>
+            <div class="cell"><img src="img/slider-shop/marmelade/tiptree_orange_2nd.jpg" alt=""></div>
+        </div>
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+    $('.1-carousel, .2-carousel, .3-carousel, .4-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    wrapAround: true,
+    freeScroll: true});
+  </script>
+
+
+    </main>
+
+    <footer>
+        <h2>Hos Sofies Forældre</h2>
+        <address>
+            Frederiksgade 74, st. th. <br> 
+            8000 Aarhus C <br>
+            Telefon: <a href="tel:+60800799">+45 60 80 07 99</a> <br>
+            <a href="sofies@post.cybercity.dk">Send e-mail</a>
+        </address>
+        <section>
+            <h2>Virksomheds info</h2>
+            <a href="omos">Om os</a> <br>
+            <a href="omos">Kontakt os</a> <br>
+            <a href="omos">Vilkår</a> <br>
+            <a href="omos">Jobs</a> 
+            
+        </section>
+    </footer>
+</body>
+</html>
